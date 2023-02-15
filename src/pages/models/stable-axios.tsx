@@ -34,7 +34,7 @@ const StableAxios = (props: Props) => {
        url: URL,
        method: "POST",
        headers: {
-         Authorization: `Bearer ${process.env.REACT_APP_HUGGING_FACE_API_KEY}`,
+         Authorization: process.env.REACT_APP_HUGGING_FACE_API_KEY,
          Accept: "application/json",
          "Content-Type": "application/json",
        },
